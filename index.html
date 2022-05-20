@@ -27,8 +27,11 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
-    <!-- css -->
-    <link rel="stylesheet" href="assets/style/css/main.css">
+    <!-- css main version 
+    <link rel="stylesheet" href="assets/style/css/main.css">-->
+
+    <!-- css v2 version -->
+    <link rel="stylesheet" href="assets/style/css/v2.css">
 
     <title>Empório Natural | Loja de produtos naturais em Araucária</title>
 
@@ -37,9 +40,9 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
             <div class="container-fluid">
-                <p class="navbar-brand company-font mb-0">Empório Natural</p>
+                <p id="brand-name" class="navbar-brand company-font mb-0">Empório Natural</p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +50,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="https://wa.me/5541988287796" class="nav-link link-secondary" target="_blank"><i
+                            <a href="https://wa.me/5541988287796" class="nav-link" target="_blank"><i
                                     class="bi bi-whatsapp" role="img" aria-label="Whatsapp"> (41) 98828-7796</i></a>
                         </li>
                         <li class="nav-item">
@@ -64,10 +67,12 @@
 
     <main>
         <!-- hero -->
-        <section class="py-2 text-center container-fluid hero">
+        <section class="pb-2 text-center container-fluid hero">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 col-lg-6 mx-auto">
-                    <h1>Empório Natural<br><span class="h2 text-muted">Produtos Naturais em Araucária</span>
+                    <h1 class="company-name">Empório Natural<br><span class="h2 company-name-span">Produtos
+                            Naturais em
+                            Araucária</span>
                     </h1>
                     <p>A cada semana uma nova promoção para nossos clientes. Consulte os produtos selecionados e
                         aproveite!</p>
@@ -82,7 +87,7 @@
 
         <!-- products carousel -->
         <section id="products" class="py-5 bg-light">
-            <h1 class="display-6 text-center pb-3">Produtos em destaque</h1>
+            <h1 class="h3 text-center pb-3 products-title">Produtos em destaque</h1>
             <div class="container">
                 <div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -105,11 +110,9 @@
         <hr class="m-0">
 
         <!-- products grid -->
-        <section class="py-5 bg-light">
+        <section id="grid" class="py-5 bg-light">
             <div class="container">
-                <div>
-                    <h1 class="display-6 text-center pb-3">Mais produtos</h1>
-                </div>
+                <h1 class="products-title">Mais produtos</h1>
                 <div id="product-card" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
                     <!-- showProductsGrid() - see main.js -->
                 </div>
@@ -125,16 +128,16 @@
                     width="100%" height="300" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" name="mapa"></iframe>
             </div>
-            <div class="bg-dark p-2">
+            <div class="social-medias p-2">
                 <ul class="d-flex justify-content-center px-0">
-                    <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-facebook" role="img"
+                    <li><a href="#" class="p-3" target="_blank"><i class="bi bi-facebook fs-4" role="img"
                                 aria-label="Facebook"></i></a></li>
-                    <li><a href="#" class="text-white p-3" target="_blank"><i class="bi bi-instagram" role="img"
+                    <li><a href="#" class="p-3" target="_blank"><i class="bi bi-instagram fs-4" role="img"
                                 aria-label="Instagram"></i></a></li>
-                    <li><a href="https://wa.me/5541988287796" class="text-white p-3" target="_blank"><i
-                                class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i></a></li>
+                    <li><a href="https://wa.me/5541988287796" class="p-3" target="_blank"><i class="bi bi-whatsapp fs-4"
+                                role="img" aria-label="Whatsapp"></i></a></li>
                 </ul>
-                <address class="text-white text-center">Rua Coronel João Antônio Xavier, 771 <br> Centro - Araucária/PR
+                <address class="text-center">Rua Coronel João Antônio Xavier, 771 <br> Centro - Araucária/PR
                 </address>
             </div>
         </section>
@@ -143,7 +146,7 @@
     </main>
 
 
-    <footer class="bg-dark text-muted text-center p-2">
+    <footer class="text-center p-2">
         <small>&copy; Copyright 2022 - Empório Natural Produtos Naturais Araucária</small>
     </footer>
 
