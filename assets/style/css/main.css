@@ -4,32 +4,52 @@ html {
 }
 
 body {
-    font-family: arial;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+hr {
+    color: #244028;
+    opacity: 1;
+}
+
+.navbar,
+#contact,
+footer {
+    background-color: #1F3825;
 }
 
 /* navbar */
-.company-font {
-    font-family: 'Pinyon Script', 'Rouge Script', 'Parisienne', arial;
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
-    padding-left: 1rem;
+#brand-name {
+    color: #C3B77C;
 }
 
-.link-secondary {
-    text-decoration: none;
+.brand-font {
+    font-family: 'Pinyon Script', 'Rouge Script', 'Parisienne', arial;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    padding-left: 1rem;
 }
 
 .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;
+    color: white;
 }
-
-
 
 /* hero */
 .hero {
     margin-top: 78px;
+}
+
+.hero-title {
+    font-family: 'Pinyon Script', 'Rouge Script', 'Parisienne', arial;
+    color: #80714F;
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    color: #80714F;
 }
 
 .btn-whatsapp {
@@ -45,10 +65,23 @@ body {
 }
 
 /* products - carousel */
+
+#products .products-title,
+#grid .products-title {
+    text-transform: uppercase;
+    color: #818C2A;
+    font-size: 1.65rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .carousel-indicators {
     position: unset;
 }
 
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #244028;
+}
 
 /* products - card-grid */
 .img-product {
@@ -56,7 +89,42 @@ body {
     max-width: 170px;
 }
 
+.card-body .price {
+    color: #818C2A;
+    font-weight: bold;
+}
+
 .rounded-whatsapp {
     border-radius: 50%;
     padding: 5px 10px;
+}
+
+/* contact */
+#contact,
+.social-medias ul li a {
+    color: white;
+}
+
+.social-medias ul li {
+    list-style: none;
+}
+
+/* footer*/
+
+footer {
+    color: #C3B77C;
+}
+
+footer small {
+    font-size: 0.7rem;
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .company-name-span {
+        display: none;
+
+    }
+
 }
